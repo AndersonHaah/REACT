@@ -1,4 +1,32 @@
-import React from 'react'
+import React, { Fragment, Component } from 'react';
 import ReactDOM from 'react-dom'
 
-ReactDOM.render(<h1>React</h1>, document.getElementById('root'))
+
+
+import Pai from './componentes/Pai';
+import Filho from './componentes/Filho';
+
+ReactDOM.render(
+    <div>
+        <Pai nome="Paulo" sobrenome="Silva">
+            {/* Como faço os componentes filhos aqui? */}
+            <Filho nome="Pedro" />
+            <Filho nome="Paulo" />
+            <Filho nome="Carla" />
+        </Pai>
+    </div>
+, document.getElementById('root'))
+
+
+
+
+                        /* Importações */
+// import Primeiro from './componentes/Primeiro';
+// import BomDia from './componentes/BomDia';
+// import Multi, { BoaNoite} from './componentes/Multiplos'
+// import Saudacao from './componentes/Saudacao';
+
+
+                        /* Renderizações */
+// ReactDOM.render(<BomDia nome="Guilherme" />, document.getElementById('root'))
+// $('<h1>').html('React 2') = .render(<h1>React 2</h1>
